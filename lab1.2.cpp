@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    int d, L, p;
+    double d, L, p;
     cout << "Диаметр окружности d = ";
     cin >> d;
     p = 3.14;
