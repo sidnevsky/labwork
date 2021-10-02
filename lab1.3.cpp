@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    int a,b,c;
+    double a,b,c;
     
     cout << "Напишите целое число для переменной a = ";
     cin >> a;
