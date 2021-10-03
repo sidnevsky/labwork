@@ -1,18 +1,25 @@
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
 int main()
 {
-    double a,b;
-    cout << "Назовите два ненулевых числа для a и b(через пробел): ";
-    cin >> a >> b;
-    cout << "Сумма: " << a + b << endl;
-	cout << "Разность: " << a - b << endl;
-	cout << "Произведение: " << a * b << endl;
-	cout << "Частное их квадратов:" << (a * a)  / (b * b) << endl;
-    
-    
+	double a,b,a2,b2,s,r,p,c;
+	cout << "Введите первое число для a: ";
+	cin >> a;
+	cout << "Введите второе число для b: ";
+	cin >> b;
+	a2 = abs(a);
+	b2 = abs(b);
+	s = a2+b2;
+	r = abs(a2-b2);
+	p = a2*b2;
+	c = a2/b2;
+	cout << "Сумма: " << s << endl;
+	cout << "Разность: " << r << endl;
+	cout << "Произведение: " << p << endl;
+	cout << "Частное: " << c;
 
     return 0;
 }
