@@ -1,21 +1,19 @@
-#include <iostream>
-
-using namespace std;
-
-int main()
+#include <stdio.h>
+#include <math.h>
+ 
+int main(void)
 {
-    double a,b;
-    cout << "Напишите два ненулевых числа для a,b" << endl;
-    cout << "a = ";
-    cin >> a;
-    cout << "b = ";
-    cin >> b;
-    cout << "Сумма: " << a + b << endl;
-	cout << "Разность: " << a - b << endl;
-	cout << "Произведение: " << a * b << endl;
-	cout << "Частное их модулей: " << a / b << endl;
-    
-    
-
+    float a, b;
+    printf("Введите первое число для a: ");
+    scanf ("%f", &a);
+ 
+    printf("Введите второе число для b: ");
+    scanf ("%f", &b);
+ 
+    printf("Сумма: %f\n",abs(a)+abs(b));
+    printf("Разность: %f\n",abs(a)-abs(b));
+    printf("Произведение: %f\n",abs(a)*abs(b));
+    printf("Частное: %f\n",abs(a)/abs(b));
+ 
     return 0;
 }
