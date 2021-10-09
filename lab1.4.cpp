@@ -10,8 +10,8 @@ int main()
 	cin >> a;
 	cout << "Введите второе число для b: ";
 	cin >> b;
-	a2 = abs(a);
-	b2 = abs(b);
+	a2 = a*a;
+	b2 = b*b;
 	s = a2+b2;
 	r = abs(a2-b2);
 	p = a2*b2;
