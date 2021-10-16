@@ -28,7 +28,7 @@ int main()
     p = a+b+c;
     cout << "Периметр: " << p << endl;
     p2 = p/2;
-    s=sqrt(p*(p-a)*(p-b)*(p-c));
+    s=sqrt(p2*(p2-a)*(p2-b)*(p2-c));
     cout << "Площадь: " << s;
     
     
