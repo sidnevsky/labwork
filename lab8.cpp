@@ -1,4 +1,5 @@
 #include <iostream>
+#include <math.h>
 using namespace std;
  
 int main() {
@@ -6,17 +7,17 @@ int main() {
     // 8-1
     cout<< "Лабораторная работа #8.1"<< endl;
     
-    double byte, kilobyte;
+    float byte, kilobyte;
     cout << "Количество Байт: ";
     cin >> byte;
- 
     kilobyte = byte/1024;
-    cout << "Килобайт: " << kilobyte << endl;
+    
+    cout << "Килобайт: " << ceil(kilobyte) << endl;
     
     // 8-2
     cout<< "Лабораторная работа #8.2"<< endl;
     
-    double a,b;
+    int a,b;
     
     cout << "Введите длину отрезка a: ";
     cin >> a;
