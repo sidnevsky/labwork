@@ -16,22 +16,22 @@ int main()
         case 1:
         case 2:
         case 12:
-        cout << "Зима";
+        cout << "Зима" << endl ;
         break;
         case 3:
         case 4:
         case 5:
-        cout << "Весна";
+        cout << "Весна" << endl;
         break;
         case 6:
         case 7:
         case 8:
-        cout << "Лето";
+        cout << "Лето" << endl;
         break;
         case 9:
         case 10:
         case 11:
-        cout << "Осень";
+        cout << "Осень" << endl;
         break;
       }
     
@@ -109,76 +109,76 @@ int main()
     if (n / 10 == 1)
         switch (n) {
         case 10:
-            cout<<"десять учебных заданий.";
+            cout<<"десять учебных заданий." << endl;
             break;
         case 11:
-            cout << "одинадцать учебных заданий.";
+            cout << "одинадцать учебных заданий." << endl;
             break;
         case 12:
-            cout << "двенадцать учебных заданий.";
+            cout << "двенадцать учебных заданий." << endl;
             break;
         case 13:
-            cout << "тринадцать учебных заданий.";
+            cout << "тринадцать учебных заданий." << endl;
             break;
         case 14:
-            cout << "четырнадцать учебных заданий.";
+            cout << "четырнадцать учебных заданий." << endl;
             break;
         case 15:
-            cout << "пятнадцать учебных заданий.";
+            cout << "пятнадцать учебных заданий." << endl;
             break;
         case 16:
-            cout << "шестнадцать учебных заданий.";
+            cout << "шестнадцать учебных заданий." << endl;
             break;
         case 17:
-            cout << "семнадцать учебных заданий.";
+            cout << "семнадцать учебных заданий." << endl;
             break;
         case 18:
-            cout << "восемнадцать учебных заданий.";
+            cout << "восемнадцать учебных заданий." << endl;
             break;
         case 19:
-            cout << "девятнадцать учебных заданий.";
+            cout << "девятнадцать учебных заданий." << endl;
             break;
         }
     else {
         switch (n / 10) {
         case 2:
-            cout << "двадцать ";
+            cout << "двадцать " << endl;
             break;
         case 3:
-            cout << "тридцать ";
+            cout << "тридцать " << endl;
             break;
         case 4:
-            cout << "сорок ";
+            cout << "сорок " << endl;
             break;
         }
  
         switch (n % 10) {
         case 1:
-            cout << "одно ";
+            cout << "одно " << endl;
             break;
         case 2:
-            cout << "два ";
+            cout << "два " << endl;
             break;
         case 3:
-            cout << "три ";
+            cout << "три " << endl;
             break;
         case 4:
-            cout << "четыре ";
+            cout << "четыре " << endl;
             break;
         case 5:
-            cout << "пять ";
+            cout << "пять " << endl;
             break;
         case 6:
-            cout << "шесть ";
+            cout << "шесть " << endl;
             break;
         case 7:
-            cout << "семь ";
+            cout << "семь " << endl;
             break;
         case 8:
-            cout << "восемь ";
+            cout << "восемь " << endl;
             break;
         case 9:
-            cout << "девять ";
+            cout << "девять " << endl;
             break;
         }
  
@@ -189,15 +189,15 @@ int main()
         case 7:
         case 8:
         case 9:
-            cout << "учебных заданий.";
+            cout << "учебных заданий." << endl;
             break;
         case 1:
-            cout << "учебное задание.";
+            cout << "учебное задание." << endl;
             break;
         case 2:
         case 3:
         case 4:
-            cout << "учебных задания.";
+            cout << "учебных задания." << endl;
             break;
         }
     }
@@ -209,122 +209,122 @@ int main()
  
     switch (n / 100) {
     case 1:
-        cout << "сто ";
+        cout << "сто " << endl;
         break;
     case 2:
-        cout << "двести ";
+        cout << "двести " << endl;
         break;
     case 3:
-        cout << "триста ";
+        cout << "триста " << endl;
         break;
     case 4:
-        cout << "четыреста ";
+        cout << "четыреста " << endl;
         break;
     case 5:
-        cout << "пятьсот ";
+        cout << "пятьсот " << endl;
         break;
     case 6:
-        cout << "шестьсот ";
+        cout << "шестьсот " << endl;
         break;
     case 7:
-        cout << "семьсот ";
+        cout << "семьсот" << endl;
         break;
     case 8:
-        cout << "восемьсот  ";
+        cout << "восемьсот  " << endl;
         break;
     case 9:
-        cout << "девятьсот  ";
+        cout << "девятьсот  " << endl;
         break;
     }
  
     if ((n % 100) / 10 == 1)
         switch (n % 100) {
         case 10:
-            cout << "десять";
+            cout << "десять" << endl;
             break;
         case 11:
-            cout << "одинадцать";
+            cout << "одинадцать" << endl;
             break;
         case 12:
-            cout << "двенадцать";
+            cout << "двенадцать" << endl;
             break;
         case 13:
-            cout << "тринадцать";
+            cout << "тринадцать" << endl;
             break;
         case 14:
-            cout << "четырнадцать";
+            cout << "четырнадцать" << endl;
             break;
         case 15:
-            cout << "пятнадцать";
+            cout << "пятнадцать" << endl;
             break;
         case 16:
-            cout << "шестнадцать";
+            cout << "шестнадцать" << endl;
             break;
         case 17:
-            cout << "семнадцать";
+            cout << "семнадцать" << endl;
             break;
         case 18:
-            cout << "восемнадцать";
+            cout << "восемнадцать" << endl;
             break;
         case 19:
-            cout << "девятнадцать";
+            cout << "девятнадцать" << endl;
             break;
         }
     else {
         switch ((n % 100) / 10) {
         case 2:
-            cout << "двадцать ";
+            cout << "двадцать " << endl;
             break;
         case 3:
-            cout << "тридцать ";
+            cout << "тридцать " << endl;
             break;
         case 4:
-            cout << "сорок ";
+            cout << "сорок " << endl;
             break;
         case 5:
-            cout << "пятьдесят ";
+            cout << "пятьдесят " << endl;
             break;
         case 6:
-            cout << "шестьдесят ";
+            cout << "шестьдесят " << endl;
             break;
         case 7:
-            cout << "семьдесят ";
+            cout << "семьдесят " << endl;
             break;
         case 8:
-            cout << "восемьдесят ";
+            cout << "восемьдесят " << endl;
             break;
         case 9:
-            cout << "девяносто ";
+            cout << "девяносто " << endl;
             break;
         }
  
         switch (n % 10) {
         case 1:
-            cout << "один";
+            cout << "один" << endl;
             break;
         case 2:
-            cout << "два";
+            cout << "два" << endl;
             break;
         case 3:
-            cout << "три";
+            cout << "три" << endl;
             break;
         case 4:
-            cout << "четыре";
+            cout << "четыре" << endl;
             break;
         case 5:
-            cout << "пять";
+            cout << "пять"<< endl;
             break;
         case 6:
-            cout << "шесть";
+            cout << "шесть" << endl;
             break;
         case 7:
-            cout << "семь";
+            cout << "семь" << endl;
             break;
         case 8:
-            cout << "восемь";
+            cout << "восемь" << endl;
             break;
         case 9:
-            cout<<"девять";
+            cout<<"девять" << endl;
             break;
         }
     }
@@ -343,19 +343,19 @@ int main()
         break;
     case 2:
     case 3:
-        cout << "черн";
+        cout << "черн" << endl;
         break;
     case 4:
     case 5:
-        cout << "зелён";
+        cout << "зелён" << endl;
         break;
     case 6:
     case 7:
-        cout << "красн";
+        cout << "красн" << endl;
         break;
     case 8:
     case 9:
-        cout << "жёлт";
+        cout << "жёлт" << endl;
         break;
     }
  
@@ -369,51 +369,51 @@ int main()
     case 9:
     case 10:
     case 11:
-        cout << "ой ";
+        cout << "ой " << endl;
         break;
     case 6:
     case 7:
     case 8:
-        cout << "ого ";
+        cout << "ого " << endl;
         break;
     }
  
     switch ((n + 8) % 12) {
     case 0:
-        cout << "крысы";
+        cout << "крысы" << endl;
         break;
     case 1:
-        cout << "коровы";
+        cout << "коровы" << endl;
         break;
     case 2:
-        cout << "тигра";
+        cout << "тигра" << endl;
         break;
     case 3:
-        cout << "зайца";
+        cout << "зайца" << endl;
         break;
     case 4:
-        cout << "дракона";
+        cout << "дракона" << endl;
         break;
     case 5:
-        cout << "змеи";
+        cout << "змеи" << endl;
         break;
     case 6:
-        cout << "лошади";
+        cout << "лошади" << endl;
         break;
     case 7:
-        cout << "овцы";
+        cout << "овцы" << endl;
         break;
     case 8:
-        cout << "обезьяны";
+        cout << "обезьяны" << endl;
         break;
     case 9:
-        cout << "курицы";
+        cout << "курицы" << endl;
         break;
     case 10:
-        cout << "собаки";
+        cout << "собаки" << endl;
         break;
     case 11:
-        cout<<"свиньи";
+        cout<<"свиньи" << endl;
         break;
     }
     
