@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {   
-    // 9-1
+    // 9--1
     cout << "Лабораторная работа #9.1" << endl;
     int n;
     cout<<"Сек: ";
