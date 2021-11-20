@@ -26,12 +26,10 @@ int main()
     cin >> b;
     cout<<"Введите число c: ";
     cin >> c;
-    if (a < b < c) {
-        cout << "Истинно" << endl;
-    }
-    else {
-        cout << "Ложь" << endl;
-    }
+    if (a<b&&b<c)
+    cout << "Истинно" << endl;
+    else 
+    cout << "Ложь" << endl;
     // 10.3
     cout << "Лабораторная работа #10.3" << endl;
     cout<<"Введите число a: ";
@@ -63,10 +61,10 @@ int main()
     cout<<"Введите число c: ";
     cin >> c;
     if ((a * a == b * b + c * c) || (b * b == a * a + c * c) || (c * c == a * a + b * b)) {
-        cout << "Истинно";
+        cout << "Истинно"<<endl;
     }
     else {
-        cout << "Ложь";
+        cout << "Ложь"<<endl;
     }
     // 10.7
     cout << "Лабораторная работа #10.7" << endl;
@@ -77,10 +75,10 @@ int main()
     cout<<"Введите число c: ";
     cin >> c;
      if ( (a+b) > c && (a+c) > b && (b+c) > a) {
-    cout << "Истинно";
+    cout << "Истинно" << endl;
     }
     else {
-    cout << "Ложь"; 
+    cout << "Ложь" << endl; 
     }
     return 0;
 }
