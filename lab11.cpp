@@ -1,4 +1,3 @@
-
 #include <iostream>
 
 using namespace std;
@@ -54,11 +53,14 @@ int main()
     
     cout<<"Лабораторная работа #11.3"<<endl;
     
-    cout << "Введите первое число: ";
+    cout << "Введите первое число: " <<endl;
     cin >> a;
-    cout << "Введите второе число: ";
+    cin >> a;
+    cout << "Введите второе число: " <<endl;
     cin >> b;
-    cout << "Введите третье число: ";
+    cin >> b;
+    cout << "Введите третье число: " <<endl;
+    cin >> c;
     cin >> c;
     
 	if (a - b > a - c)
