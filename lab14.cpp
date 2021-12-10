@@ -5,44 +5,52 @@ using namespace std;
 int main()
 {   
     cout << "Лаборторная работа #14.1" << endl;
-    
-    int a,b;
-    cout << "Введите первое число: ";
-    cin >>  a;
-    cout << "Введите второе число: ";
+    int a, b;
+    cout<<"Введите целое число №1: ";
+    cin>>a;
+    cout << "Bведите целое число №2: ";
     cin >> b;
-    for( int i = b - 1; i>a; --i)
-    cout << i << endl;
-    cout << "Количество: " << b-a-1 << endl; 
+ 
+    int i, j;
+    for (i = a; i <= b; ++i) {
+        for (j = 1; j <= i; ++j)
+            cout << i;
+    }
     
+    cout << endl;
     cout << "Лаборторная работа #14.2" << endl;
     
-    double A,B;
-    cout << "Введите первое число: ";
-    cin >>  A;
-    cout << "Введите второе число: ";
-    cin >> B;
-    
-    cout << "Длинa незанятой части отрезка A: " << a%b << endl;
+    int a1,b1;
+    cout << "Введите положительное первое число: ";
+    cin >>  a1;
+    cout << "Введите положительное второе число: ";
+    cin >> b1;
+    int temp = a1;
+    while (temp >= 0) {
+    temp -= b1;
+    }
+    cout << "Длинa незанятой части отрезка: " << temp + b1 << endl;
 
     cout << "Лаборторная работа #14.3" << endl;
     
-    int n,k,s;
+    int n;
+    int k = 0;
+    int s = 0;
     
     cout << "Введите целое число N (> 1): ";
     cin >> n;
-    // подумать еще разок
-    while(s <- n) {
+    while(s <= n) {
         ++k;
         s +=k;
     }
-    cout << "K: " << k << endl;
+    cout <<  "n: " << n << endl;
+    cout <<  "k: " << k << endl;
     
     cout << "Лаборторная работа #14.4" << endl;
     
     double p,sum = 1000;
     int K = 1;
-    cout << "P: ";
+    cout << "Введите процент вклада: ";
     cin >> p;
     while (sum <= 1100) {
         ++K;
