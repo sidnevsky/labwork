@@ -15,19 +15,18 @@ int main()
     cout << m << " кг = " <<  c*m << endl;
     
     cout<<"Лабораторная работа #13.2"<<endl;
-    int N;
+    int n;
     double p = 1;
-    cout << "N: ";
-    cin >> N;
-    for (int i = 1; i<=N; i++) {
+    cout << "Целое число: ";
+    cin >> n;
+    for (int i = 1; i<=n; i++) {
         p = p*(1+0.1*i);
     }
     cout << "Результат: " << p << endl;
     
     cout<<"Лабораторная работа #13.3"<<endl;
     
-    int n;
-    cout << "N:";
+    cout << "Целое число: ";
     cin >> n;
  
     int result = 0, i;
@@ -39,37 +38,37 @@ int main()
     cout<<"Лабораторная работа #13.4"<<endl;
     
     float a;
-    cout<<"A:";
+    cout<<"Вещественное число: ";
     cin>>a;
  
-    cout<<"N: ";
+    cout<<"Целое число: ";
     cin>>n;
  
  
-    float a2 = 1, rez = 1;
+    float a2 = 1, res = 1;
   
  
     for (i = 2; i <= n; ++i)
     {
         a2 *= a;
-        rez += a2;
+        res += a2;
     }
-    cout<<rez<<endl;
+    cout<<res<<endl;
     
     cout<<"Лабораторная работа #13.5"<<endl;
     
-    cout<<"A:";
+    cout<<"Вещественное число: ";
     cin>>a;
-    cout<<"N:";
+    cout<<"Целое число: ";
     cin>>n;
     
  
     for (i = 2; i <= n; ++i)
     {
         a2 *= -a;
-        rez += a2;
+        res += a2;
     }
-    cout<< rez;
+    cout<< res;
     
     
     return 0;
