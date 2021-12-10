@@ -1,4 +1,3 @@
-
 #include <iostream>
 
 using namespace std;
@@ -8,102 +7,105 @@ int main()
     cout<<"Лабораторная работа #12.1"<<endl;
     
     
-    int a;
-    cout << "Число:";
-    cin >> a;
- 
-    switch (a) {
-        case 1:
-        case 2:
-        case 12:
-        cout << "Зима" << endl ;
-        break;
-        case 3:
-        case 4:
-        case 5:
-        cout << "Весна" << endl;
-        break;
-        case 6:
-        case 7:
-        case 8:
-        cout << "Лето" << endl;
-        break;
-        case 9:
-        case 10:
-        case 11:
-        cout << "Осень" << endl;
-        break;
-      }
+    int d,m;
+    cout << "Номер дня(с 1 по 31): ";
+    cin >> d;
+    cout << "Номер месяца(с 1 по 12): ";
+    cin >> m;
     
-    
-    
-    cout<<"Лабораторная работа #12.2"<<endl;
-    
-    int n;
-        char c;
-     
-        cout << "Введите текущее напрление перемещения робота: ";
-        cin >> c;
-        cout << "Введите команду: ";
-        cin >> n;
-     
-        switch (c) {
-            case 'С':
-                switch (n) {
-                    case 1:
-                        c='З';
-                        break;
-                    case 0:
-                        c='С';
-                        break;
-                    case -1:
-                        c='В';
-                        break;
-                    }
-                break;
-            case 'В':
-                switch (n) {
-                    case 1:
-                        c='С';
-                        break;
-                    case 0:
-                        c='В';
-                        break;
-                    case -1:
-                        c='Ю';
-                        break;
-                    }
-            case 'Ю':
-                switch (n) {
-                    case 1:
-                        c='В';
-                        break;
-                    case 0:
-                        c='Ю';
-                        break;
-                    case -1:
-                        c='З';
-                        break;
-                }
-                break;
-            case 'З':
-                switch (n) {
-                    case 1:
-                        c='Ю';
-                        break;
-                    case 0:
-                        c='З';
-                        break;
-                    case -1:
-                        c='С';
-                        break;
-                }
+    if (d < 32)
+    {
+        switch(d)
+        {
+            case 1: cout << "первое "; break;
+            case 2: cout << "второе "; break;
+            case 3: cout << "третье "; break;
+            case 4: cout << "четвертое "; break;
+            case 5: cout << "пятое "; break;
+            case 6: cout << "шестое "; break;
+            case 7: cout << "седьмое "; break;
+            case 8: cout << "восьмое "; break;
+            case 9: cout << "девятое "; break;
+            case 10: cout << "десятое "; break;
+            case 11: cout << "одиннадцатое "; break;
+            case 12: cout << "двенадцатое "; break;
+            case 13: cout << "тринадцатое "; break;
+            case 14: cout << "четырнадцатое "; break;
+            case 15: cout << "пятнадцатое "; break;
+            case 16: cout << "шестнадцатое "; break;
+            case 17: cout << "семнадцатое "; break;
+            case 18: cout << "восемнадцатое "; break;
+            case 19: cout << "девятнадцатое "; break;
+            case 20: cout << "двацатое "; break;
+            case 21: cout << "двадцать первое "; break;
+            case 22: cout << "двадцать второе "; break;
+            case 23: cout << "двадцать третье "; break;
+            case 24: cout << "двадцать четвертое "; break;
+            case 25: cout << "двадцать пятое "; break;
+            case 26: cout << "двадцать шестое "; break;
+            case 27: cout << "двадцать седьмое "; break;
+            case 28: cout << "двадцать восьмое "; break;
+            case 29: cout << "двадцать девятое "; break;
+            case 30: cout << "тридцатое "; break;
+            case 31: cout << "тридцать первое "; break;
         }
-        cout << c;
+    }
+    else
+    {
+        cout << "Вы неправильно ввели числа" << endl;
+        return 0;
+    }
+    switch (m) {
+            case 1: cout << "января"; break;
+            case 2: cout << "февраля"; break;
+            case 3: cout << "марта"; break;
+            case 4: cout << "апреля"; break;
+            case 5: cout << "мая"; break;
+            case 6: cout << "июня"; break;
+            case 7: cout << "июля"; break;
+            case 8: cout << "августа"; break;
+            case 9: cout << "сентября"; break;
+            case 10: cout << "октября"; break;
+            case 11: cout << "ноября"; break;
+            case 12: cout << "января"; break;
         
+      }
+      
+    cout << endl;  
+      
+    cout<<"Лабораторная работа #12.2"<<endl;
+    char c;
+    int n;
+    cout << "Введите символ направления («N» — север, «W» — запад, «S» — юг, «E» — восток): ";
+    cin >> c;
+    cout << "Введите цифровую команду для робота (0 — продолжать движение, 1 — поворот налево, -1 — поворот направо): ";
+    cin >> n;
+    cout << "Направление - "; 
+    switch (n) {
+        case 1: switch (c) {
+   		case 'N': cout << "W - Робот отправился на Запад"; break;
+   		case 'S': cout << "E - Робот отправился на Восток"; break;  
+   		case 'W': cout << "S - Робот отправился на Юг"; break;
+   		case 'E': cout << "N - Робот отправился на Север"; break;
+        } break ;
+	    case -1: switch (c) {
+   		case 'N': cout << "E - Робот отправился на Восток"; break;
+   		case 'S': cout << "W - Робот отправился на Запад"; break;  
+   		case 'W': cout << "N - Робот отправился на Север"; break;
+   	    case 'E': cout << "S - Робот отправился на Юг"; break;
+	    } break;
+	    case 0: switch (c) {
+   		case 'N': cout << "N - Робот отправился на Север"; break;
+   		case 'S': cout << "S - Робот отправился на Юг"; break;  
+   		case 'W': cout << "W - Робот отправился на Запад"; break;
+   	    case 'E': cout << "E - Робот отправился на Восток"; break;
+	    } break;
+        }
+      
+    cout << endl;  
+      
     cout<<"Лабораторная работа #12.3"<<endl;
-    
-    cout<<"Количество: ";
+    cout<<"Введите целое число в диапазоне 10–40: ";
     cin>>n;
  
     if (n / 10 == 1)
@@ -142,43 +144,43 @@ int main()
     else {
         switch (n / 10) {
         case 2:
-            cout << "двадцать " << endl;
+            cout << "двадцать " ;
             break;
         case 3:
-            cout << "тридцать " << endl;
+            cout << "тридцать "  ;
             break;
         case 4:
-            cout << "сорок " << endl;
+            cout << "сорок " ;
             break;
         }
  
         switch (n % 10) {
         case 1:
-            cout << "одно " << endl;
+            cout << "одно ";
             break;
         case 2:
-            cout << "два " << endl;
+            cout << "два ";
             break;
         case 3:
-            cout << "три " << endl;
+            cout << "три";
             break;
         case 4:
-            cout << "четыре " << endl;
+            cout << "четыре " ;
             break;
         case 5:
-            cout << "пять " << endl;
+            cout << "пять " ;
             break;
         case 6:
-            cout << "шесть " << endl;
+            cout << "шесть " ;
             break;
         case 7:
-            cout << "семь " << endl;
+            cout << "семь " ;
             break;
         case 8:
-            cout << "восемь " << endl;
+            cout << "восемь ";
             break;
         case 9:
-            cout << "девять " << endl;
+            cout << "девять ";
             break;
         }
  
@@ -189,234 +191,198 @@ int main()
         case 7:
         case 8:
         case 9:
-            cout << "учебных заданий." << endl;
+            cout << "учебных заданий.";
             break;
         case 1:
-            cout << "учебное задание." << endl;
+            cout << "учебное задание.";
             break;
         case 2:
         case 3:
         case 4:
-            cout << "учебных задания." << endl;
+            cout << "учебных задания.";
             break;
         }
     }
-    
+    cout << endl; 
     cout<<"Лабораторная работа #12.4"<<endl;
     
-    cout << "Число: ";
+    cout << "Введите целое число в диапазоне 100–999: ";
     cin>>n;
  
     switch (n / 100) {
-    case 1:
-        cout << "сто " << endl;
-        break;
-    case 2:
-        cout << "двести " << endl;
-        break;
-    case 3:
-        cout << "триста " << endl;
-        break;
-    case 4:
-        cout << "четыреста " << endl;
-        break;
-    case 5:
-        cout << "пятьсот " << endl;
-        break;
-    case 6:
-        cout << "шестьсот " << endl;
-        break;
-    case 7:
-        cout << "семьсот" << endl;
-        break;
-    case 8:
-        cout << "восемьсот  " << endl;
-        break;
-    case 9:
-        cout << "девятьсот  " << endl;
-        break;
-    }
+        case 1:
+            cout << "сто ";
+            break;
+        case 2:
+            cout << "двести ";
+            break;
+        case 3:
+            cout << "триста ";
+            break;
+        case 4:
+            cout << "четыреста ";
+            break;
+        case 5:
+            cout << "пятьсот " ;
+            break;
+        case 6:
+            cout << "шестьсот " ;
+            break;
+        case 7:
+            cout << "семьсот" ;
+            break;
+        case 8:
+            cout << "восемьсот  " ;
+            break;
+        case 9:
+            cout << "девятьсот  " ;
+            break;
+        }
  
     if ((n % 100) / 10 == 1)
         switch (n % 100) {
-        case 10:
-            cout << "десять" << endl;
-            break;
-        case 11:
-            cout << "одинадцать" << endl;
-            break;
-        case 12:
-            cout << "двенадцать" << endl;
-            break;
-        case 13:
-            cout << "тринадцать" << endl;
-            break;
-        case 14:
-            cout << "четырнадцать" << endl;
-            break;
-        case 15:
-            cout << "пятнадцать" << endl;
-            break;
-        case 16:
-            cout << "шестнадцать" << endl;
-            break;
-        case 17:
-            cout << "семнадцать" << endl;
-            break;
-        case 18:
-            cout << "восемнадцать" << endl;
-            break;
-        case 19:
-            cout << "девятнадцать" << endl;
-            break;
-        }
+            case 10:
+                cout << "десять" ;
+                break;
+            case 11:
+                cout << "одинадцать" ;
+                break;
+            case 12:
+                cout << "двенадцать";
+                break;
+            case 13:
+                cout << "тринадцать"  ;
+                break;
+            case 14:
+                cout << "четырнадцать";
+                break;
+            case 15:
+                cout << "пятнадцать" ;
+                break;
+            case 16:
+                cout << "шестнадцать" ;
+                break;
+            case 17:
+                cout << "семнадцать" ;
+                break;
+            case 18:
+                cout << "восемнадцать" ;
+                break;
+            case 19:
+                cout << "девятнадцать" ;
+                break;
+            }
     else {
         switch ((n % 100) / 10) {
-        case 2:
-            cout << "двадцать " << endl;
-            break;
-        case 3:
-            cout << "тридцать " << endl;
-            break;
-        case 4:
-            cout << "сорок " << endl;
-            break;
-        case 5:
-            cout << "пятьдесят " << endl;
-            break;
-        case 6:
-            cout << "шестьдесят " << endl;
-            break;
-        case 7:
-            cout << "семьдесят " << endl;
-            break;
-        case 8:
-            cout << "восемьдесят " << endl;
-            break;
-        case 9:
-            cout << "девяносто " << endl;
-            break;
-        }
- 
+            case 2:
+                cout << "двадцать ";
+                break;
+            case 3:
+                cout << "тридцать ";
+                break;
+            case 4:
+                cout << "сорок ";
+                break;
+            case 5:
+                cout << "пятьдесят ";
+                break;
+            case 6:
+                cout << "шестьдесят ";
+                break;
+            case 7:
+                cout << "семьдесят ";
+                break;
+            case 8:
+                cout << "восемьдесят";
+                break;
+            case 9:
+                cout << "девяносто ";
+                break;
+            }
+     
         switch (n % 10) {
-        case 1:
-            cout << "один" << endl;
-            break;
-        case 2:
-            cout << "два" << endl;
-            break;
-        case 3:
-            cout << "три" << endl;
-            break;
-        case 4:
-            cout << "четыре" << endl;
-            break;
-        case 5:
-            cout << "пять"<< endl;
-            break;
-        case 6:
-            cout << "шесть" << endl;
-            break;
-        case 7:
-            cout << "семь" << endl;
-            break;
-        case 8:
-            cout << "восемь" << endl;
-            break;
-        case 9:
-            cout<<"девять" << endl;
-            break;
+            case 1:
+                cout << "один";
+                break;
+            case 2:
+                cout << "два";
+                break;
+            case 3:
+                cout << "три" ;
+                break;
+            case 4:
+                cout << "четыре";
+                break;
+            case 5:
+                cout << "пять";
+                break;
+            case 6:
+                cout << "шесть" ;
+                break;
+            case 7:
+                cout << "семь" ;
+                break;
+            case 8:
+                cout << "восемь" ;
+                break;
+            case 9:
+                cout<<"девять" ;
+                break;
+            }
+    }
+    
+    cout << endl; 
+    cout << "Лабораторная работа #12.5"<<endl;
+
+    int year;
+    cout << "Введите год: ";
+    cin >> year;
+        
+    switch (year%1984%60/12)
+    {
+        case 0:
+        cout << "год зален";
+        break;
+        case 1:cout << "год красн";
+        break;
+        case 2:cout << "год желт";
+        break;
+        case 3:cout << "год бел";
+        break;
+        case 4:cout << "год черн";
+        break;
         }
-    }
-    
-    cout<<"Лабораторная работа #12.5"<<endl;
-    
-    cout << "Год: ";
-    cin>>n;
- 
-    cout << "год ";
- 
-    switch ((n) % 10) {
-    case 0:
-    case 1:
-        cout << "бел";
+        
+        switch (year%1984%60%12)
+        {
+        case 0:cout << "ой крысы";
         break;
-    case 2:
-    case 3:
-        cout << "черн" << endl;
+        case 1:cout << "ой коровы";
         break;
-    case 4:
-    case 5:
-        cout << "зелён" << endl;
+        case 2:cout << "ого тигра";
         break;
-    case 6:
-    case 7:
-        cout << "красн" << endl;
+        case 3:cout << "ого зайца";
         break;
-    case 8:
-    case 9:
-        cout << "жёлт" << endl;
+        case 4:cout << "ого дракона";
+        break;
+        case 5:cout << "ой змеи";
+        break;
+        case 6:cout << "ой лошади";
+        break;
+        case 7:cout << "ой овцы";
+        break;
+        case 8:cout << "ой обезьяны";
+        break;
+        case 9:cout << "ой курицы";
+        break;
+        case 10:cout << "ой собаки";
+        break;
+        case 11:cout << "ой овцы";
         break;
     }
- 
-    switch ((n + 1) % 5) {
-    case 0:
-    case 1:
-    case 2:
-    case 3:
-    case 4:
-    case 5:
-    case 9:
-    case 10:
-    case 11:
-        cout << "ой " << endl;
-        break;
-    case 6:
-    case 7:
-    case 8:
-        cout << "ого " << endl;
-        break;
-    }
- 
-    switch ((n + 8) % 12) {
-    case 0:
-        cout << "крысы" << endl;
-        break;
-    case 1:
-        cout << "коровы" << endl;
-        break;
-    case 2:
-        cout << "тигра" << endl;
-        break;
-    case 3:
-        cout << "зайца" << endl;
-        break;
-    case 4:
-        cout << "дракона" << endl;
-        break;
-    case 5:
-        cout << "змеи" << endl;
-        break;
-    case 6:
-        cout << "лошади" << endl;
-        break;
-    case 7:
-        cout << "овцы" << endl;
-        break;
-    case 8:
-        cout << "обезьяны" << endl;
-        break;
-    case 9:
-        cout << "курицы" << endl;
-        break;
-    case 10:
-        cout << "собаки" << endl;
-        break;
-    case 11:
-        cout<<"свиньи" << endl;
-        break;
-    }
-    
-    return 0;
-    
 }
+
+    
+    
+    
+        
