@@ -1,5 +1,5 @@
-
 #include <iostream>
+#include <math.h>
 
 using namespace std;
 
@@ -48,7 +48,7 @@ int main()
     float a2 = 1, res = 1;
   
  
-    for (i = 2; i <= n; ++i)
+    for (i = 1; i <= n; ++i)
     {
         a2 *= a;
         res += a2;
@@ -61,14 +61,13 @@ int main()
     cin>>a;
     cout<<"Целое число: ";
     cin>>n;
-    
+    float res1 = 1;
  
-    for (i = 2; i <= n; ++i)
+    for (i = 1; i <= n; i++)
     {
-        a2 *= -a;
-        res += a2;
+        res1 += pow(-a,i);
     }
-    cout<< res;
+    cout<< res1;
     
     
     return 0;
