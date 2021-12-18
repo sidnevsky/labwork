@@ -49,7 +49,7 @@ int main()
     cout << "Лаборторная работа #14.4" << endl;
     
     double p,sum = 1000;
-    int K = 1;
+    int K = 0;
     cout << "Введите процент вклада: ";
     cin >> p;
     while (sum <= 1100) {
