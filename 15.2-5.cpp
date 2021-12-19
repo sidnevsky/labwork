@@ -1,67 +1,98 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
 
-#include <stdio.h>
- 
+// 1
+void PowerA3(double a, double &b)
+{
+    b = a * a * a;
+}
+
+// 2
 int sign(float x){
    if (x<0){ return -1;}    
    if (x==0){ return 0;}    
    if (x>0){ return 1;}
 }
+
+// 3
 float rings(float r1, float r2){
    return 3.14*(r1*r1-r2*r2);
 }
 
-int quarter(float x, float y){
-    if ((x>0)&&(y>0)){return 1;}
-    if ((x<0)&&(y>0)){return 2;}
-    if ((x<0)&&(y<0)){return 3;}     
-    if ((x>0)&&(y<0)){return 4;}
+// 4
+int quarter(float x1, float y1){
+    if ((x1>0)&&(y1>0)){return 1;}
+    if ((x1<0)&&(y1>0)){return 2;}
+    if ((x1<0)&&(y1<0)){return 3;}     
+    if ((x1>0)&&(y1<0)){return 4;}
 }
 
+// 5 
 float fact2(int n){
     int temp=1;
     for (;n>0;n-=2) temp*=n;
     return temp;
 }
- 
+
+
 int main(void)
 {   
-    printf("Лабораторнгая работа №15.2\n");
+    cout << "Лаборторная работа #15.1" << endl;
+    
+    double x[5] = {1, 2, 3, 4, 5};
+    for (int i = 0; i < 5; i++)
+    {
+        PowerA3(x[i], x[i]);
+        cout << x[i] << ' ';
+    }
+    
+    cout << endl;
+    cout << "Лаборторная работа #15.2" << endl;
+    
     float a,b;
-    printf("A:");
-    scanf("%f", &a);
-    printf("B:");
-    scanf("%f", &b);
+    cout << "A: ";
+    cin >> a;
+    cout << "B: ";
+    cin >> b;
  
-    printf("Sign(A)+Sign(B):%i\n",sign(a)+sign(b));
-    printf("Лабораторнгая работа №15.3\n");
+    cout <<sign(a)+sign(b)<<endl;
+    
+    cout << "Лаборторная работа #15.3" << endl;
     
     int i;
     for(i=1; i<=3; ++i){
         float r1,r2;
-        printf("R1:");
-        scanf("%f", &r1);
-        printf("R2:");
-        scanf("%f", &r2);
-        printf("S:%f\n",rings(r1,r2));
+        cout<<"R1: ";
+        cin>>r1;
+        cout<<"R2: ";
+        cin>>r2;
+        cout<< rings(r1,r2) << endl;
     }
     
-    printf("Лабораторнгая работа №15.4\n");
+    cout << "Лаборторная работа #15.4" << endl;
     
-    for (i=1; i<=3; ++i){
-        float x,y;
-        printf("X:");
-        scanf("%f", &x);
-        printf("Y:");
-        scanf("%f", &y);
-        printf("Quarter:%i\n",quarter(x,y));
+    int z;
+    for (z=1; z<=3; ++z){
+        float x1,y1;
+        cout<<"X: ";
+        cin>>x1;
+        cout<<"Y: ";
+        cin>>y1;
+        cout<<quarter(x1,y1)<<endl;
      }
+    
+    cout << "Лаборторная работа #15.5" << endl;
     
     int n;
     for (i=1; i<=5; ++i){
-        printf("N:");
-        scanf("%i", &n);
-        printf("fact: %f\n",fact2(n));
+        cout<<"N: ";
+        cin>>n;
+        cout<<fact2(n)<<endl;
     }
     
+
     return 0;
+    
 }
+
