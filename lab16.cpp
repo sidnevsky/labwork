@@ -75,9 +75,26 @@ int main()
             cout<<k[i1];
             cout<<k[n1-i-1];
     }
-    if (n1%2 != 0 ) cout<<k[(n1/2)];
+    if (n1%2 != 0 ) cout<<k[(n1/2)] << endl;
     
+    cout << "Лабораторная работа 16.5"<<endl;
     
+    int ad[10];
+    int nd, id;
+ 
+    cout<<"N: ";
+    cin>>nd;
+ 
+    for (id=0; id<nd; ++id){
+        cout<<"a: ",id+1;
+        cin>>ad[id];
+    }
+ 
+    for (id=0; id<nd; id+=2)             
+    cout<<ad[id];       
+    for (id=nd-(nd%2)-1; id>=1; id-=2)
+            cout<<ad[id];
+ 
     
     return 0;
 }
