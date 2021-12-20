@@ -1,5 +1,6 @@
 #include <iostream>
-#include <math.h> 
+#include <math.h>
+#include <vector>
 using namespace std;
 
 int main()
@@ -38,30 +39,31 @@ int main()
     
     cout << "Лабораторная работа 16.3"<<endl;
     
-    int z[10];
-    int i;
- 
-    cout<<"N: ";
-    cin>>n;
- 
-    cout<<"a: ";
-    cin>>z[0];
- 
-    cout<<"B: ";
-    cin>>z[1];
- 
-    for (i=2; i<n; ++i){
-        z[i]=0;
-        int i2;
-        for (i2=0; i2<i; ++i2) z[i] += z[i2];
-    }
-    for (i=0; i<n; ++i) cout<<i,z[i];
+    int nz,sum,az,bz;
+    cout << "N:";
+    cin >> nz;
+    vector<int> v(nz);
+    cout << "a: ";
+    cin >> az;
+    cout << "B: ";
+    cin >> bz;
+    v[0] = az;
+    v[1] = bz;
+    sum = v[0] + v[1];
+    for (vector<int>::size_type i=2;i<nz;++i)
+        {
+            v[i] = sum;
+            sum += v[i];
+    
+        }
+    for (vector<int>::size_type i=0;i<v.size();++i)
+    cout << v[i] << ' ';
     
     cout<<endl;
     
     cout << "Лабораторная работа 16.4"<<endl;
     
-    int k[10];
+    int k[1000];
     int i1,n1;
     cout<<"n: ";
     cin>>n1;
@@ -72,8 +74,8 @@ int main()
     }
  
     for (i1=0; i1<n/2; ++i1){
-            cout<<k[i1];
-            cout<<k[n1-i-1];
+            cout<<k[i1]<<endl;
+            cout<<k[n1-i1-1]<<endl;
     }
     if (n1%2 != 0 ) cout<<k[(n1/2)] << endl;
     
