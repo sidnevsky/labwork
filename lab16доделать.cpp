@@ -73,7 +73,7 @@ int main()
         cin>>k[i1];
     }
  
-    for (i1=0; i1<n/2; ++i1){
+    for (i1=0; i1<n1/2; ++i1){
             cout<<k[i1]<<endl;
             cout<<k[n1-i1-1]<<endl;
     }
