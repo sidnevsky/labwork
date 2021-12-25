@@ -58,7 +58,7 @@ int main()
         if (a[i]<min) min=a[i];
     }
 
-    cout<<"Минимальный элемент: ";
+    cout<<"Минимальный элемент: "<<min;
     
     
     cout<<endl;
